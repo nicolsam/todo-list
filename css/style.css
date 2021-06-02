@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+input, input:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+ol, ul, p {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#68EACC), to(#497BE8));
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+}
+
+#wrapper {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px;
+  height: 65%;
+  min-height: 490px;
+  width: 45%;
+  min-width: 445px;
+  overflow: hidden;
+}
+
+#wrapper header {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#wrapper #inputField {
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#wrapper #inputField input {
+  width: calc(100% - 50px);
+  height: 100%;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+#wrapper #inputField button {
+  width: 45px;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  background: #8E49E8;
+  color: #ffff;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+#wrapper #inputField button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#wrapper #todo-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#wrapper #todo-list li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  background: #F2F2F2;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+#wrapper #todo-list li p {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+#wrapper #todo-list li span {
+  position: absolute;
+  top: 0px;
+  right: -45px;
+  color: #fff;
+  width: 45px;
+  text-align: center;
+  background: #E74C3C;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#wrapper #todo-list li:hover span {
+  right: 0px;
+}
+
+#wrapper footer {
+  position: absolute;
+  bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  overflow: hidden;
+}
+
+#wrapper footer #taskCounter {
+  position: relative;
+}
+
+#wrapper footer #taskCounter span#spanCounter {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#wrapper footer #taskCounter button {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+  background: #8E49E8;
+  color: #ffff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px 10px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+#wrapper footer #taskCounter button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/*# sourceMappingURL=style.css.map */
